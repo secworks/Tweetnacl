@@ -21,6 +21,9 @@ I want to learn how to write best Python modules according to best
 practive and will spend time ensuring that I try to do that. If I'm not,
 please add issue/comment with good pointers. Thanks!
 
+[http://as.ynchrono.us/2007/12/filesystem-structure-of-python-project_21.html](Currently
+following this structure description)
+
 
 ## Implementation
 
