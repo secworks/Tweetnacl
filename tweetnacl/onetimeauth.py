@@ -1,0 +1,19 @@
+#define crypto_onetimeauth_PRIMITIVE "poly1305"
+#define crypto_onetimeauth crypto_onetimeauth_poly1305
+#define crypto_onetimeauth_verify crypto_onetimeauth_poly1305_verify
+#define crypto_onetimeauth_BYTES crypto_onetimeauth_poly1305_BYTES
+#define crypto_onetimeauth_KEYBYTES crypto_onetimeauth_poly1305_KEYBYTES
+#define crypto_onetimeauth_IMPLEMENTATION crypto_onetimeauth_poly1305_IMPLEMENTATION
+#define crypto_onetimeauth_VERSION crypto_onetimeauth_poly1305_VERSION
+#define crypto_onetimeauth_poly1305_tweet_BYTES 16
+#define crypto_onetimeauth_poly1305_tweet_KEYBYTES 32
+#define crypto_onetimeauth_poly1305_tweet_VERSION "-"
+#define crypto_onetimeauth_poly1305 crypto_onetimeauth_poly1305_tweet
+#define crypto_onetimeauth_poly1305_verify crypto_onetimeauth_poly1305_tweet_verify
+#define crypto_onetimeauth_poly1305_BYTES crypto_onetimeauth_poly1305_tweet_BYTES
+#define crypto_onetimeauth_poly1305_KEYBYTES crypto_onetimeauth_poly1305_tweet_KEYBYTES
+#define crypto_onetimeauth_poly1305_VERSION crypto_onetimeauth_poly1305_tweet_VERSION
+#define crypto_onetimeauth_poly1305_IMPLEMENTATION "crypto_onetimeauth/poly1305/tweet"
+
+# extern int crypto_onetimeauth_poly1305_tweet(unsigned char *,const unsigned char *,unsigned long long,const unsigned char *);
+# extern int crypto_onetimeauth_poly1305_tweet_verify(const unsigned char *,const unsigned char *,unsigned long long,const unsigned char *);

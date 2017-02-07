@@ -1,0 +1,19 @@
+#define crypto_scalarmult_PRIMITIVE "curve25519"
+#define crypto_scalarmult crypto_scalarmult_curve25519
+#define crypto_scalarmult_base crypto_scalarmult_curve25519_base
+#define crypto_scalarmult_BYTES crypto_scalarmult_curve25519_BYTES
+#define crypto_scalarmult_SCALARBYTES crypto_scalarmult_curve25519_SCALARBYTES
+#define crypto_scalarmult_IMPLEMENTATION crypto_scalarmult_curve25519_IMPLEMENTATION
+#define crypto_scalarmult_VERSION crypto_scalarmult_curve25519_VERSION
+#define crypto_scalarmult_curve25519_tweet_BYTES 32
+#define crypto_scalarmult_curve25519_tweet_SCALARBYTES 32
+#define crypto_scalarmult_curve25519_tweet_VERSION "-"
+#define crypto_scalarmult_curve25519 crypto_scalarmult_curve25519_tweet
+#define crypto_scalarmult_curve25519_base crypto_scalarmult_curve25519_tweet_base
+#define crypto_scalarmult_curve25519_BYTES crypto_scalarmult_curve25519_tweet_BYTES
+#define crypto_scalarmult_curve25519_SCALARBYTES crypto_scalarmult_curve25519_tweet_SCALARBYTES
+#define crypto_scalarmult_curve25519_VERSION crypto_scalarmult_curve25519_tweet_VERSION
+#define crypto_scalarmult_curve25519_IMPLEMENTATION "crypto_scalarmult/curve25519/tweet"
+
+# extern int crypto_scalarmult_curve25519_tweet(unsigned char *,const unsigned char *,const unsigned char *);
+# extern int crypto_scalarmult_curve25519_tweet_base(unsigned char *,const unsigned char *);

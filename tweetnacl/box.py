@@ -1,0 +1,48 @@
+#define crypto_box_PRIMITIVE "curve25519xsalsa20poly1305"
+#define crypto_box crypto_box_curve25519xsalsa20poly1305
+#define crypto_box_open crypto_box_curve25519xsalsa20poly1305_open
+#define crypto_box_keypair crypto_box_curve25519xsalsa20poly1305_keypair
+#define crypto_box_beforenm crypto_box_curve25519xsalsa20poly1305_beforenm
+#define crypto_box_afternm crypto_box_curve25519xsalsa20poly1305_afternm
+#define crypto_box_open_afternm crypto_box_curve25519xsalsa20poly1305_open_afternm
+#define crypto_box_PUBLICKEYBYTES crypto_box_curve25519xsalsa20poly1305_PUBLICKEYBYTES
+#define crypto_box_SECRETKEYBYTES crypto_box_curve25519xsalsa20poly1305_SECRETKEYBYTES
+#define crypto_box_BEFORENMBYTES crypto_box_curve25519xsalsa20poly1305_BEFORENMBYTES
+#define crypto_box_NONCEBYTES crypto_box_curve25519xsalsa20poly1305_NONCEBYTES
+#define crypto_box_ZEROBYTES crypto_box_curve25519xsalsa20poly1305_ZEROBYTES
+#define crypto_box_BOXZEROBYTES crypto_box_curve25519xsalsa20poly1305_BOXZEROBYTES
+#define crypto_box_IMPLEMENTATION crypto_box_curve25519xsalsa20poly1305_IMPLEMENTATION
+#define crypto_box_VERSION crypto_box_curve25519xsalsa20poly1305_VERSION
+#define crypto_box_curve25519xsalsa20poly1305_tweet_PUBLICKEYBYTES 32
+#define crypto_box_curve25519xsalsa20poly1305_tweet_SECRETKEYBYTES 32
+#define crypto_box_curve25519xsalsa20poly1305_tweet_BEFORENMBYTES 32
+#define crypto_box_curve25519xsalsa20poly1305_tweet_NONCEBYTES 24
+#define crypto_box_curve25519xsalsa20poly1305_tweet_ZEROBYTES 32
+#define crypto_box_curve25519xsalsa20poly1305_tweet_BOXZEROBYTES 16
+#define crypto_box_curve25519xsalsa20poly1305_tweet_VERSION "-"
+#define crypto_box_curve25519xsalsa20poly1305 crypto_box_curve25519xsalsa20poly1305_tweet
+#define crypto_box_curve25519xsalsa20poly1305_open crypto_box_curve25519xsalsa20poly1305_tweet_open
+#define crypto_box_curve25519xsalsa20poly1305_keypair crypto_box_curve25519xsalsa20poly1305_tweet_keypair
+#define crypto_box_curve25519xsalsa20poly1305_beforenm crypto_box_curve25519xsalsa20poly1305_tweet_beforenm
+#define crypto_box_curve25519xsalsa20poly1305_afternm crypto_box_curve25519xsalsa20poly1305_tweet_afternm
+#define crypto_box_curve25519xsalsa20poly1305_open_afternm crypto_box_curve25519xsalsa20poly1305_tweet_open_afternm
+#define crypto_box_curve25519xsalsa20poly1305_PUBLICKEYBYTES crypto_box_curve25519xsalsa20poly1305_tweet_PUBLICKEYBYTES
+#define crypto_box_curve25519xsalsa20poly1305_SECRETKEYBYTES crypto_box_curve25519xsalsa20poly1305_tweet_SECRETKEYBYTES
+#define crypto_box_curve25519xsalsa20poly1305_BEFORENMBYTES crypto_box_curve25519xsalsa20poly1305_tweet_BEFORENMBYTES
+#define crypto_box_curve25519xsalsa20poly1305_NONCEBYTES crypto_box_curve25519xsalsa20poly1305_tweet_NONCEBYTES
+#define crypto_box_curve25519xsalsa20poly1305_ZEROBYTES crypto_box_curve25519xsalsa20poly1305_tweet_ZEROBYTES
+#define crypto_box_curve25519xsalsa20poly1305_BOXZEROBYTES crypto_box_curve25519xsalsa20poly1305_tweet_BOXZEROBYTES
+#define crypto_box_curve25519xsalsa20poly1305_VERSION crypto_box_curve25519xsalsa20poly1305_tweet_VERSION
+#define crypto_box_curve25519xsalsa20poly1305_IMPLEMENTATION "crypto_box/curve25519xsalsa20poly1305/tweet"
+
+# functions
+#extern int crypto_box_curve25519xsalsa20poly1305_tweet(unsigned char *,const unsigned char *,
+#              unsigned long long,const unsigned char *,const unsigned char *,const unsigned char *);
+#extern int crypto_box_curve25519xsalsa20poly1305_tweet_open(unsigned char *,const unsigned char *,
+#              unsigned long long,const unsigned char *,const unsigned char *,const unsigned char *);
+#extern int crypto_box_curve25519xsalsa20poly1305_tweet_keypair(unsigned char *,unsigned char *);
+#extern int crypto_box_curve25519xsalsa20poly1305_tweet_beforenm(unsigned char *,const unsigned char *,const unsigned char *);
+#extern int crypto_box_curve25519xsalsa20poly1305_tweet_afternm(unsigned char *,const unsigned char *,
+#                        unsigned long long,const unsigned char *,const unsigned char *);
+#extern int crypto_box_curve25519xsalsa20poly1305_tweet_open_afternm(unsigned char *,const unsigned char *,
+#                            unsigned long long,const unsigned char *,const unsigned char *);
